@@ -1,0 +1,93 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /**1rem*=10px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}/*si agregas padding no afecta paul irish box lo anterior se agrega de la pagina https://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+body{
+	font-family: 'Open Sans', sans-serif;/* esta se agrego desde google font https://fonts.google.com/?query=open&selection.family=Open+Sans|PT+Sans:400,700*/
+	font-size: 1.6rem;
+	line-height: 2;
+}
+/*Globales*/
+ .contenedor{
+ 	max-width: 1200px;
+ 	margin: 0 auto;
+  }
+
+  h1,h2,h3,h4{
+  	font-family: 'PT Sans' sans-serif;/* esta se agrego desde google font*/
+  	
+  }
+  h1{
+  	font-size: 4.8rem;
+  }
+  h2{
+	font-size: 4rem;
+  }
+  h3{
+	font-size: 3.2rem;
+  }
+  h4{
+	font-size: 2.8rem;
+  }
+  img{
+  	max-width: 100%;
+  }
+
+  /**Utilidades**/
+  .centrar-texto{
+  	text-align: center;
+  }
+  .no-margin{
+  	margin:0;
+
+  }
+  /*Header*/
+@media(min-width: 768px) {
+	.barra{
+		display: flex;
+	}
+	
+}
+  .site-header{
+
+  	background-image: url(../img/banner.jpg);
+  	background-repeat: no-repeat;
+  	background-position: center center;/*para centrar*/
+  	background-size: cover;/*va a hacer que se llene tanto de altura como ancho el espacio con la imagen*/
+  	height: 60rem;/*con esto se fija la altura 600 pixeles es igual a 60 rem*/
+
+}
+.site-header a{
+	color:#ffffff;
+	text-decoration: none;/*con esto se quita el subrayado del enlace*/
+}
+.site-header h1{
+	text-align: center;
+	font-weight: 400;
+}
+.site-header h1{
+	font-weight: 700;
+
+}
+
+/*Navegacion*/
+.navegacion a{
+	text-align: center;
+	display: block;
+	font-size: 1.8rem;
+}
+
+
+/**header texto**/
+.texto-header{
+	color: #ffffff;
+	text-align: center;
+	margin-top: 5rem;
+}
+.texto-header p{
+	font-size: 2.2rem;
+}
